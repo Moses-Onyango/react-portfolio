@@ -1,0 +1,15 @@
+.Services {
+  padding: 2rem;
+  background-color: #58a6ff;
+  text-align: center;
+}
+
+.services-heading {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  border-bottom: 2px solid #ccc;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
