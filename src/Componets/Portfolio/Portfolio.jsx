@@ -1,8 +1,7 @@
 import React from 'react';
-import './Portfolio.css';
 import Project1Img from '../../assets/shop.PNG';
 import Project2Img from '../../assets/porfolio2.PNG';
-import Project3Img from '../../assets/porfolio.PNG'; // Add more images as needed
+import Project3Img from '../../assets/porfolio.PNG';
 
 const projects = [
   {
@@ -27,14 +26,21 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="portfolio">
-      <h2>My Work</h2>
-      <div className="portfolio-items">
+    <section id="portfolio" className="py-16 px-8 bg-[#f5f5f5] text-center">
+      <h2 className="text-4xl text-[#1d3557] font-bold mb-10">My Work</h2>
+      <div className="flex flex-wrap justify-center gap-8">
         {projects.map((project) => (
-          <div key={project.id} className="portfolio-item">
-            <img src={project.image} alt={project.title} className="portfolio-img" />
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
+          <div
+            key={project.id}
+            className="bg-white rounded-xl p-4 w-[250px] shadow-lg text-center"
+          >
+            <img
+              src={project.image}
+              alt={project.title}
+              className="w-full h-auto rounded-md mb-4"
+            />
+            <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+            <p className="text-gray-600 text-sm">{project.description}</p>
           </div>
         ))}
       </div>
